@@ -11,10 +11,16 @@ if(a < b):
     temp = a
     a = b
     b = temp
-if a >= (b + c): print("NAO FORMA TRIANGULO")
-elif (a * a) == ((b * b) + (c * c)): print("TRIANGULO RETANGULO")
-elif (a * a) > ((b * b) + (c * c)): print("TRIANGULO OBTUSANGULO")
-elif (a * a) < ((b * b) + (c * c)): print("TRIANGULO ACUTANGULO")
+
+n = (a * a)
+x = (b * b)
+y = c * c
+z = (x + y)
+w = b + c
+if a >= w: print("NAO FORMA TRIANGULO")
+elif n == z: print("TRIANGULO RETANGULO")
+elif n > z: print("TRIANGULO OBTUSANGULO")
+elif n < z: print("TRIANGULO ACUTANGULO")
 
 
 if a == b and a == c: print("TRIANGULO EQUILATERO")
