@@ -1,0 +1,11 @@
+entrada1 = input()
+dados1 = entrada1.split()
+x1 = float(dados1[0])
+y1 = float(dados1[1])
+entrada2 = input()
+dados2 = entrada2.split()
+x2 = float(dados2[0])
+y2 = float(dados2[1])
+
+formula = ( (((float(x2) - float(x1)) ** 2) + ((float(y2) - float(y1)) ** 2))** 0.5)
+print("%.4f" % formula)
